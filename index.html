@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DA UNO A CENTO</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      counter3 = 1;
+      counter5 = 1;
+      for (var i = 1; i <= 100; i++ ) {
+
+        if (counter3 === 3 && counter5 === 5) {
+          console.log(i + " FizzBuzz");
+          counter3 = 0;
+          counter5 = 0;
+        }
+
+        else if (counter3 === 3) {
+          console.log(i + " Fizz");
+          counter3 = 0;
+        }
+
+        else if (counter5 === 5) {
+          console.log(i + " Buzz");
+          counter5 = 0;
+        }
+
+        else {
+          console.log(i);
+        }
+        counter3++;
+        counter5++;
+      }
+
+    </script>
+  </body>
+</html>
